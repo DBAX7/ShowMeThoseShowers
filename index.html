@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/80833262c1.js"></script>
+    <script src="https://kit.fontawesome.com/80833262c1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Show Me Those Showers</title>
+    <title>Weather App</title>
 </head>
 <body>
 
     <header class="header">
-        <h1>Show Me Those Showers</h1>
+        <h1>Weather Dashboard</h1>
     </header>
 
     <div class="container">
@@ -20,31 +22,31 @@
                 <h1>Search for a City:</h1>
             </div>
             <div class="row">
-                <input type="text" class="searchInput" id="userInput">
-                <button type="submit" id= "search" class="searchBtn">
+                <input type="text" class="searchInput" placeholder="Search">
+                <button type="submit" class="searchBtn">
                 <i class="fas fa-search"></i>
                 </button>
             </div>
-            <div class="historyItems"></div>
+          
         </div>
         <div class="col-two-container">
             <div class="forecast">
-                <div  id= "cityRow" class="row">
-                    <h1 class="cityName"></h1>
+                <div class="row">
+                    <h1 class="cityName">City Name</h1>
                     <h1 class="currentDate"></h1>
                     <img class="weatherIcon"></img>
                 </div>
-                <div id="weatherRow" class="row">
-                    <p class="temp"></p>
+                <div class="row">
+                    <p class="temp">Temperature:</p>
                 </div>
                 <div class="row">
-                    <p class="humidity"></p>
+                    <p class="humidity">Humidity:</p>
                 </div>
                 <div class="row">
-                    <p class="windSpeed"></p>
+                    <p class="windSpeed">Wind Speed:</p>
                 </div>
                 <div class="row">
-                    <p class="uvIndex"></p>
+                    <p class="uvIndex">UV Index:</p>
                 </div>
             </div>
 
@@ -55,7 +57,7 @@
             </div>
         </div>
     </div>
-    <script src="/index.js"></script>
+    
 </body>
-
+<script src="index.js"></script>
 </html>

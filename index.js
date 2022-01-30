@@ -1,3 +1,4 @@
+
 const search= document.getElementById("search")
 const userInput= document.getElementById("userInput")
 const apiKey="d9bf63649835fe47190aec204770630a"
